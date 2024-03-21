@@ -1,0 +1,95 @@
+@import '../styles/theme-variables.scss';
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    height: 90px;
+    position: absolute;
+}
+
+.show-nav {
+    animation: slide-nav-down 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.hide-nav {
+    animation: slide-nav-up 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.nav-content {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    margin: 2px 25px 10px 15px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-items {
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 3.5vh;
+    display: flex;
+    position: relative;
+    justify-content: right;
+}
+
+.nav-item {
+    @include themify($themes) {
+        color: themed('text');
+    }
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.3rem 1.5rem;
+    font-size: large;
+}
+
+.logo {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@keyframes slide-nav-up {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-nav-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

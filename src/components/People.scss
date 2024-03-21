@@ -1,0 +1,45 @@
+@import '../styles/theme-variables.scss';
+
+
+
+#founders-title {
+    margin: 0;
+    font-size: 4rem;
+    @include themify($themes) {
+        color: themed('text');
+    }
+}
+
+#founders-section {
+    width: 80%;
+    height: fit-content;
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+}
+
+#founders-section a {
+    margin: 2vw;
+    display: inline-block;
+    text-decoration: none!important;
+    color: inherit;
+}
+
+.person-info {
+    @include themify($themes) {
+        background-color: themed('secondaryBackground');
+        color: themed('text');
+    }
+    border-radius: 5%;
+    width: 200px;
+    padding: 1vw;
+    z-index: -99;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-info img {
+    width: 100%;
+    border-radius: 100%;
+}
