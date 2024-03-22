@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/EcoNex-Website/static/css/main.6fe37f16.css",
-    "main.js": "/EcoNex-Website/static/js/main.7af73155.js",
+    "main.css": "/EcoNex-Website/static/css/main.6fd5dfed.css",
+    "main.js": "/EcoNex-Website/static/js/main.392340de.js",
     "static/js/453.8ab44547.chunk.js": "/EcoNex-Website/static/js/453.8ab44547.chunk.js",
+    "static/media/OrbitMaxenceDuterne-Regular.ttf": "/EcoNex-Website/static/media/OrbitMaxenceDuterne-Regular.fd922ab99973788169bc.ttf",
     "index.html": "/EcoNex-Website/index.html",
-    "main.6fe37f16.css.map": "/EcoNex-Website/static/css/main.6fe37f16.css.map",
-    "main.7af73155.js.map": "/EcoNex-Website/static/js/main.7af73155.js.map",
+    "main.6fd5dfed.css.map": "/EcoNex-Website/static/css/main.6fd5dfed.css.map",
+    "main.392340de.js.map": "/EcoNex-Website/static/js/main.392340de.js.map",
     "453.8ab44547.chunk.js.map": "/EcoNex-Website/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fe37f16.css",
-    "static/js/main.7af73155.js"
+    "static/css/main.6fd5dfed.css",
+    "static/js/main.392340de.js"
   ]
 }
