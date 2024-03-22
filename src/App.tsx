@@ -13,12 +13,20 @@ function App() {
 
     const [theme, setTheme] = useState('light');
 
+    function changeLightMode() {
+        if (theme === "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
+    }
+
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <div className={`expand theme-${theme}`}>
                 <div className="App">
                     <header>
-                        <Navbar />
+                        <Navbar changeLightMode={changeLightMode}/>
                     </header>
                     <div id="title-section">
                         <img id="title-logo" src="./EcoNexLogo.png" alt="EcoNex Logo" />

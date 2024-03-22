@@ -25,6 +25,26 @@
     margin: 2px 25px 10px 15px;
     padding: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav-items {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+.light-mode {
+    padding: 10px;
+    margin: 1vw;
+    font-size: xx-large;
+    cursor: pointer;
+    @include themify($themes) {
+        color: themed('text');
+    }
 }
 
 .nav-items {
@@ -44,7 +64,7 @@
     display: flex;
     cursor: pointer;
     text-decoration: none;
-    padding: 0.3rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     font-size: large;
 }
 

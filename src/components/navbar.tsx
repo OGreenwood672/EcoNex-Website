@@ -1,8 +1,10 @@
-import { animateScroll as scroll } from "react-scroll";
 
 import "./navbar.scss";
 
-export default function Navbar() {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
+
+export default function Navbar(props: any) {
 
     const handleClickScroll: any = (elem: string): void => {
         const element: (HTMLElement | null) = document.getElementById(elem);
@@ -15,13 +17,15 @@ export default function Navbar() {
     return (
         <nav className="nav show-nav" id="navbar">
             <ol className="nav-content">
-                <div onClick={() => document.getElementsByClassName("App")[0].scrollTo({top: 0, behavior: "smooth"})}>
-                    <img onClick={() => scroll.scrollToTop()} className="logo logo-slideleft" src="./EcoNexIcon.png" alt="EcoNex">
-                </img>
+                <div className="left-nav-items">
+                    <img onClick={() => document.getElementsByClassName("App")[0].scrollTo({top: 0, behavior: "smooth"})} className="logo logo-slideleft" src="./EcoNexIcon.png" alt="EcoNex" />
+                    <div className="light-mode" onClick={props.changeLightMode}>
+                        <FontAwesomeIcon icon={faSun} />
+                    </div>
                 </div>
                 <ol className="nav-items">
                     <li className="nav-item underline nav-slidedown" onClick={() => handleClickScroll("about")}>
-                        <p>Who We Are</p>
+                        <p>Our Mission</p>
                     </li>
                     <li className="nav-item underline nav-slidedown" onClick={() => handleClickScroll("founders-section")}>
                         <p>Our People</p>
