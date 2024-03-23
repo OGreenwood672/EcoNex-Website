@@ -9,6 +9,16 @@
     height: 100%;
     margin: 0;
     overflow-x: hidden;
+
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    // width: var(--size);
+    // height: var(--size);
+    // filter: blur(calc(var(--size) / 5));
+    // background-image: linear-gradient(hsl(172, 72%, 55%), hsl(252, 82, 57));
+    // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 #title-section {
@@ -27,8 +37,8 @@ p {
 }
 
 #title-logo {
-    // width: 80vw;
-    height: 30vw;
+    width: 35vw;
+    // height: 30vw;
 }
 
 .whitespace {

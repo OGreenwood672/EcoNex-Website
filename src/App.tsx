@@ -7,6 +7,7 @@ import People from './components/People';
 import Navbar from './components/navbar';
 import About from './components/about';
 import Footer from './components/footer';
+import Contact from './components/contact';
 
 
 function App() {
@@ -28,11 +29,14 @@ function App() {
                     <header>
                         <Navbar changeLightMode={changeLightMode}/>
                     </header>
+                    <div className="whitespace" />
                     <div id="title-section">
-                        <img id="title-logo" src="./EcoNexLogo.png" alt="EcoNex Logo" />
+                        <img id="title-logo" src="./EcoNex.png" alt="EcoNex Logo" />
                     </div>
+                    <div className="whitespace" />
                     <About />
                     <People />
+                    <Contact />
                     <footer>
                         <Footer />
                     </footer>

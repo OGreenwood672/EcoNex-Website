@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage2": "http://localhost:3000/",
-  "homepage": "https://ogreenwood672.github.io/EcoNex-Website/",
+  "homepage": "http://localhost:3000/",
+  "homepage2": "https://ogreenwood672.github.io/EcoNex-Website/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "^6.5.1",
